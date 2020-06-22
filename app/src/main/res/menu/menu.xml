@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    android:id="@+id/toolbar">-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:layout_width="100dp">-->
+
+    <item
+        android:id="@+id/accident"
+        android:icon="@drawable/collision"
+        android:title="Accident"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/breakdown"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Breakdown"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/road_works"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Road Works"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/closed_road"
+        android:title="Closed Road"
+        app:showAsAction="never"/>
+
+<!--    <item-->
+<!--        android:id="@+id/popupTest"-->
+<!--        android:title="Approaching incident"-->
+<!--        app:showAsAction="never"/>-->
+
+</menu>

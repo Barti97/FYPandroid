@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NAVI-it</string>
+    <string name="find_route">FIND ROUTE</string>
+    <string name="title_activity_search">search</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation">Navigation</string>
+    <string name="active_routing">Active Routing</string>
+    <string name="avoid_incidents">Avoid Incidents</string>
+    <string name="home">Home</string>
+    <string name="route_settings">Route Settings</string>
+    <string name="route_preferences">Route Preferences</string>
+    <string name="calculate_route">Calculate Route</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="logout">Logout</string>
+    <string name="favourites">Favourites</string>
+    <string name="saved_routes">Saved Routes</string>
+</resources>

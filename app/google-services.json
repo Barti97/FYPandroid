@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "238571944071",
+    "firebase_url": "https://fyp1-30cba.firebaseio.com",
+    "project_id": "fyp1-30cba",
+    "storage_bucket": "fyp1-30cba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238571944071:android:25f1dbcbc22cdebaaba022",
+        "android_client_info": {
+          "package_name": "com.example.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238571944071-jbpcg7g058klp179r89sp0ofhssm2rd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0bln5i1m1tEa7nPt-B5R096nwWNPZKx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238571944071-jbpcg7g058klp179r89sp0ofhssm2rd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

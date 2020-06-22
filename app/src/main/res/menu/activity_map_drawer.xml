@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/drawer_menu">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_routes"
+            android:icon="@drawable/ic_stars"
+            android:title="@string/favourites" />
+
+        <!--        <item-->
+        <!--            android:id="@+id/app_bar_switch"-->
+        <!--            android:icon="@drawable/ic_menu_camera"-->
+        <!--            android:title="Switch"-->
+        <!--            app:actionLayout="@layout/switch_item"-->
+        <!--            app:showAsAction="always" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_gallery"-->
+        <!--            android:icon="@drawable/ic_menu_gallery"-->
+        <!--            android:title="Gallery" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_slideshow"-->
+        <!--            android:icon="@drawable/ic_menu_slideshow"-->
+        <!--            android:title="Slideshow" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_manage"-->
+        <!--            android:icon="@drawable/ic_menu_manage"-->
+        <!--            android:title="Tools" />-->
+    </group>
+
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/route_settings">
+        <!--        app:showAsAction="always">-->
+        <menu android:id="@+id/settingsMenu">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/activeRoutingItem"
+                    android:icon="@drawable/ic_network_check_black"
+                    android:title="@string/active_routing"
+                    android:checkable="false"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always"
+                    />
+
+                <item
+                    android:id="@+id/avoidIncidentsItem"
+                    android:icon="@drawable/ic_directions_black_24dp"
+                    android:title="@string/avoid_incidents"
+                    android:checkable="false"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/route"
+        android:title="@string/route_preferences">
+        <!--        app:showAsAction="always">-->
+        <menu android:id="@+id/menuRoutePreference">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/routePreference"
+                    android:title=""
+                    app:actionLayout="@layout/dropdown_item"
+                    app:showAsAction="always"
+                    />
+
+            </group>
+        </menu>
+    </item>
+</menu>

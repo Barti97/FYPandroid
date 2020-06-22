@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MapActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+<!--            app:titleTextColor="@color/colorWhite"/>-->
+
+<!--        app:popupTheme="@style/AppTheme.PopupOverlay"-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_map" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startNavBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="#FD3434"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <com.github.anastr.speedviewlib.AwesomeSpeedometer
+        android:id="@+id/speedometer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:sv_indicator="HalfLineIndicator"
+        app:sv_indicatorColor="#11FD00"
+        app:sv_indicatorWidth="4dp"
+        app:sv_trembleDegree="0"
+        app:sv_maxSpeed="265"
+        app:sv_minSpeed="1"
+        app:sv_speedometerColor="#ef3737"
+        app:sv_speedometerWidth="70dp"
+        app:sv_trianglesColor="#25b9b4"
+        app:sv_unit="km/h"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
