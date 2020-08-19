@@ -217,9 +217,6 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
         IMapController mapController = map.getController();
 
         mapController.setZoom(loadZoomlevel);
-//        GeoPoint startPoint = new GeoPoint(51.870362, -8.472972); //home
-//        GeoPoint startPoint = new GeoPoint(51.875882, -8.509453);
-//        currentLocation = startPoint;
 
         GeoPoint startPoint = currentLocation;
         mapController.setCenter(startPoint);
@@ -537,38 +534,28 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
         switch (item.getItemId()) {
             case R.id.accident:
                 title = "Accident";
-//                location = new GeoPoint(51.87600413776026, -8.491629660129547);
                 location = currentLocation;
                 incidentReporting.placeMarker(MapActivity.this, map, title, location);
                 serverRequests.saveIncident(title, location);
                 return (true);
             case R.id.breakdown:
                 title = "Breakdown";
-//                location = new GeoPoint(51.875841, -8.491315);
                 location = currentLocation;
                 incidentReporting.placeMarker(MapActivity.this, map, title, location);
                 serverRequests.saveIncident(title, location);
                 return (true);
             case R.id.road_works:
                 title = "Roadworks";
-//                location = new GeoPoint(51.875841, -8.491315);
                 location = currentLocation;
                 incidentReporting.placeMarker(MapActivity.this, map, title, location);
                 serverRequests.saveIncident(title, location);
                 return (true);
             case R.id.closed_road:
                 title = "Closed Road";
-//                location = new GeoPoint(51.875841, -8.491315);
                 location = currentLocation;
                 incidentReporting.placeMarker(MapActivity.this, map, title, location);
                 serverRequests.saveIncident(title, location);
                 return (true);
-//            case R.id.popupTest:
-////                Incident incident = serverRequests.checkNearestIncident(currentLocation);
-//                Incident incident = serverRequests.checkNearestIncident(new GeoPoint(51.875617,-8.486558));
-//                if (incident != null) {
-//                    incidentReporting.showAlertDialog(MapActivity.this, incident);
-//                }
         }
         return (super.onOptionsItemSelected(item));
     }
