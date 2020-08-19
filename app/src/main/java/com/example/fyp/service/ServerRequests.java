@@ -202,12 +202,12 @@ public class ServerRequests {
 //    }
 
 //    public static String findPlace(String searchPhrase) {
-//        return HttpRequest.executeGet("https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62487948acef386c48808312fcdaf6978e33&text=" + searchPhrase + "&boundary.country=IE");
+//        return HttpRequest.executeGet("https://api.openrouteservice.org/geocode/search?api_key=***********************************************************&text=" + searchPhrase + "&boundary.country=IE");
 //
 //    }
 
 //    public List<String> autocompletePlace(String searchPhrase) {
-//        String searchRes = HttpRequest.executeGet("https://api.openrouteservice.org/geocode/autocomplete?api_key=5b3ce3597851110001cf62487948acef386c48808312fcdaf6978e33&text=" + searchPhrase + "&boundary.country=IE&layers=address,venue,neighbourhood");
+//        String searchRes = HttpRequest.executeGet("https://api.openrouteservice.org/geocode/autocomplete?api_key=***********************************************************&text=" + searchPhrase + "&boundary.country=IE&layers=address,venue,neighbourhood");
 //        return parseAutocompleteSearch(searchRes);
 //    }
 
